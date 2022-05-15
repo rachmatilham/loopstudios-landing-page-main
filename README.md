@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page on Frontend Mentor]()
+- Solution URL: [Solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/loopstudios-landing-page-HJo8zcRIq)
 - Live Site URL: [Github Pages](https://rachmatilham.github.io/loopstudios-landing-page-main/)
 
 ## My process
