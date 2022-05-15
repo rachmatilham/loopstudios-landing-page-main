@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  height: 650px;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  background-image: url(./images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  padding: 40px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+nav img {
+  width: 144px;
+  height: fit-content;
+  position: relative;
+  z-index: 3;
+}
+nav .nav-icon {
+  width: 24px;
+  height: 16px;
+  background: url(./images/icon-hamburger.svg) no-repeat center;
+  background-size: contain;
+  position: relative;
+  z-index: 3;
+}
+nav .nav-icon:hover {
+  cursor: pointer;
+}
+nav .nav-icon.active {
+  width: 20px;
+  background-image: url(./images/icon-close.svg);
+}
+nav .nav-link {
+  display: none;
+  width: 100%;
+  height: 667px;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav .nav-link.active {
+  display: block;
+}
+nav .nav-link ul {
+  margin-top: 220px;
+}
+nav .nav-link li {
+  margin-top: 18px;
+  padding-left: 25px;
+  list-style-type: none;
+}
+nav .nav-link a {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  color: var(--white);
+  font-size: 1.7em;
+  letter-spacing: -0.03em;
+}
+
+header h1 {
+  margin: 162px 23px 0;
+  padding: 26px 23px 18px;
+  max-width: 650px;
+  border: 2px solid var(--white);
+  text-transform: uppercase;
+  font-size: 2.7em;
+  letter-spacing: -0.025em;
+  line-height: 0.93;
+}
+
+article.interactive {
+  margin: 96px 24px 0;
+}
+article.interactive .img-container {
+  width: 100%;
+  height: 225px;
+  background: url(./images/mobile/image-interactive.jpg) no-repeat;
+  background-size: cover;
+}
+article.interactive .text-container {
+  text-align: center;
+  padding: 47px 20px 0;
+}
+article.interactive h2 {
+  color: var(--black);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+article.interactive p {
+  margin-top: 16px;
+  color: var(--very-dark-gray);
+  font-family: "Alata", sans-serif;
+  line-height: 1.68;
+}
+
+article.creation {
+  margin-top: 97px;
+  padding: 0 24px;
+}
+article.creation h2 {
+  color: var(--black);
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+article.creation h3 {
+  width: 45%;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+article.creation .creation-container {
+  margin-top: 48px;
+}
+article.creation .card {
+  margin-top: 24px;
+  margin-bottom: 0;
+  color: var(--white);
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+article.creation .card .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    hsla(0, 0%, 0%, 0.6),
+    hsla(0, 0%, 0%, 0)
+  );
+}
+article.creation .card:hover {
+  cursor: pointer;
+  color: var(--black);
+}
+article.creation .card:hover .overlay {
+  background-image: none;
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+article.creation .deep-earth {
+  background: url(./images/mobile/image-deep-earth.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .night-arcade {
+  background: url(./images/mobile/image-night-arcade.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .soccer-team {
+  background: url(./images/mobile/image-soccer-team.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .grid {
+  background: url(./images/mobile/image-grid.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .from-above {
+  background: url(./images/mobile/image-from-above.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .pocket-borealis {
+  background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .curiosity {
+  background: url(./images/mobile/image-curiosity.jpg) no-repeat;
+  background-size: cover;
+}
+article.creation .fisheye {
+  background: url(./images/mobile/image-fisheye.jpg) no-repeat;
+  background-size: cover;
+}
+
+article.creation .cta {
+  margin: 32px auto 0;
+  width: 160px;
+  height: 42px;
+  border: 2px solid var(--black);
+  background-color: transparent;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+article.creation .cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+article.creation .cta a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+main footer {
+  margin-top: 96px;
+  padding-bottom: 43px;
+}
+
+footer {
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  background-color: var(--black);
+}
+footer img.logo {
+  margin-top: 56px;
+  width: 144px;
+  height: fit-content;
+}
+footer .cta {
+  margin-top: 32px;
+}
+footer .cta li {
+  margin-top: 17px;
+  list-style-type: none;
+}
+footer .cta a {
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.1em;
+}
+footer .icon {
+  margin: 50px auto 0;
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .icon p {
+  position: relative;
+}
+footer p.copyright {
+  margin-top: 14px;
+  color: var(--dark-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  color: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  nav .nav-icon {
+    display: none;
+  }
+  nav .nav-link {
+    width: 34%;
+    height: auto;
+    display: block;
+    background-color: transparent;
+    position: relative;
+    top: 2px;
+  }
+  nav .nav-link ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 260px;
+  }
+  nav .nav-link li {
+    margin: 0;
+    padding: 0;
+  }
+  nav .nav-link a {
+    font-family: "Alata", sans-serif;
+    text-transform: capitalize;
+    font-size: 0.98em;
+    letter-spacing: 0;
+  }
+
+  article.creation {
+    margin-top: 185px;
+    padding: 0 163px;
+  }
+  article.creation .creation-container {
+    margin-top: 83px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    -ms-grid-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  article.creation .card {
+    margin-top: 0;
+    height: 450px;
+  }
+  article.creation .card .overlay {
+    background-image: linear-gradient(
+      to top,
+      hsla(0, 0%, 0%, 0.6),
+      hsla(0, 0%, 0%, 0)
+    );
+  }
+
+  article.creation .deep-earth {
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+  }
+  article.creation .night-arcade {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+  }
+  article.creation .soccer-team {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+  }
+  article.creation .grid {
+    background-image: url(./images/desktop/image-grid.jpg);
+  }
+  article.creation .from-above {
+    background-image: url(./images/desktop/image-from-above.jpg);
+  }
+  article.creation .pocket-borealis {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  }
+  article.creation .curiosity {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+  }
+  article.creation .fisheye {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+  }
+
+  nav .nav-link a:hover:after,
+  footer .cta a:hover:after,
+  footer .icon p:hover:after {
+    content: "";
+    width: 26px;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 13px);
+    display: block;
+    background-color: var(--white);
+  }
+}
+
+@media (min-width: 1100px) {
+  header {
+    background-image: url(./images/desktop/image-hero.jpg);
+  }
+
+  nav {
+    padding: 64px 164px 0;
+    padding-right: 167px;
+  }
+  nav img {
+    width: 191px;
+  }
+
+  header h1 {
+    width: 45.2%;
+    min-width: 650px;
+    max-width: inherit;
+    margin: 129px 0 0;
+    margin-left: 164px;
+    padding: 40px 38px 30px;
+    font-size: 4.8em;
+    line-height: 0.96;
+  }
+
+  article.interactive {
+    margin: 160px 164px 0;
+    display: flex;
+    position: relative;
+  }
+  article.interactive .img-container {
+    width: 65.7%;
+    height: 500px;
+    background-image: url(./images/desktop/image-interactive.jpg);
+  }
+  article.interactive .text-container {
+    padding: 96px 95px 0;
+    padding-right: 0;
+    width: 48.8%;
+    background-color: var(--white);
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+  article.interactive h2 {
+    font-size: 3.2em;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  article.interactive p {
+    margin-top: 25px;
+  }
+
+  article.creation {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "h2 cta" "creation creation";
+    position: relative;
+  }
+  article.creation h2 {
+    text-align: left;
+    font-size: 3.1em;
+    letter-spacing: 0.005em;
+    grid-area: h2;
+  }
+  article.creation h3 {
+    width: 62.8%;
+    font-size: 2.1em;
+    letter-spacing: 0;
+    left: 16%;
+    bottom: 7.2%;
+  }
+  article.creation .grid h3 {
+    width: 57%;
+  }
+  article.creation .creation-container {
+    grid-area: creation;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    -ms-grid-columns: repeat(4, minmax(200px, 1fr));
+  }
+
+  article.creation .cta {
+    grid-area: cta;
+    margin: 0;
+    margin-top: 2px;
+    position: absolute;
+    right: -2px;
+  }
+
+  main footer {
+    margin-top: 185px;
+    padding: 43px 165px;
+    padding-bottom: 28px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 34.1% auto;
+    -ms-grid-columns: 34.1% auto;
+    grid-template-areas:
+      "logo icon"
+      "cta copyright";
+    row-gap: 26px;
+    position: relative;
+  }
+
+  footer img.logo {
+    margin-top: 0;
+    grid-area: logo;
+  }
+  footer .cta {
+    margin-top: 0;
+    grid-area: cta;
+  }
+  footer .cta ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
+  }
+  footer .cta li {
+    margin-top: 0;
+  }
+  footer .icon {
+    margin: 0;
+    grid-area: icon;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  footer p.copyright {
+    margin-top: 0;
+    grid-area: copyright;
+  }
+}
